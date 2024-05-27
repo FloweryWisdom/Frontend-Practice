@@ -94,6 +94,8 @@ article {
     margin-bottom: 5%;
     margin-left: 7.5%;
     border-radius: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
 article:nth-child(1) {
