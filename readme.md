@@ -26,8 +26,7 @@ Notes from CSS Class #1:
     2. IDs
     3. Classes/Attributes/Pseudo-Classes
     4. Tag Selectors
-
-• CSS Common Attributes: 
+x
     This concept refers to the set of CSS properties that are frequently applied across different HTML elements to control their appearance and layout. These properties address common styling needs such as color, font, margin, padding, border and background. 
 
 • CSS Units: 
