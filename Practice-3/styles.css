@@ -1,6 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #body__background {
-    background-image: url(./images/pattern-background-mobile.svg);
-    min-height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
@@ -15,7 +18,7 @@
     min-width: 40%;
 }
 
-.card__body {
+.card__body {   
     height: 80vh;
     border-radius: 10px;
     width: 60%;
@@ -23,9 +26,15 @@
     background-color: white;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
     
-    .card {
-        width: 80%;
+    body {
+       min-width: 375px;
     }
+    
+    #body__background {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+    
 }
