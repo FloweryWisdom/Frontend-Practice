@@ -19,5 +19,116 @@ body {
 .container  {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-end;
+    width: 270px;
+    height: 370px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6);
+    /* padding: 2rem 2rem 0rem 2rem; */
+    margin: 1rem;
+} 
+
+.card:nth-child(1) {
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.card:nth-child(2) {
+    width: 280px;
+    height: 390px;
+    background: linear-gradient(to right, #ef593d, #ef593d, #da4d67);
+}
+
+.card:nth-child(2) .box__plan__features {
+    margin-bottom: 10px;
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to right, #9bc355, #78bb78, #51ae9a);
+}   
+
+.box__header {
+    margin-top: 30px; 
+    letter-spacing: 0.1rem;
+}
+
+.box__price {
+    position: relative;
+}
+
+.box__price h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    position: relative;;
+    z-index: 2;
+}
+
+.box__price h2 sup {
+    font-size: 1rem;
+    vertical-align: baseline; 
+}
+
+.box__price h3 {
+    font-size: 7rem;
+    font-weight: 800;
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.1);
+    text-shadow: none;; 
+}
+
+.box__plan {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+
+}
+
+.box__plan__features {
+    list-style-type: none;
+}
+
+.box__button {
+    cursor: pointer;
+    width: 135px;
+    height: 50px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-top-left-radius: 1.5rem;
+    /* position: relative; */
+    align-self: flex-end;
+    margin-top: 2rem;
+}
+
+.box__button p {
+    margin-left: 0rem;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+}
+
+.card:hover .box__price h3 {
+    transform: translate(30px, 0px);
+    transition-duration: 0.5s;
+}
+.card:hover .box__button {
+    width: 100%;
+    border-top-left-radius: 0rem;
+    transition-duration: 0.5s;
 }
