@@ -21,12 +21,12 @@ body {
     color: white; 
     display: flex;
     flex-direction: column;
-    padding: 1em 0 1em 0;
 }
 
 .icon__container {
    padding-left: 10%;
    top: 0;
+   padding-top: 1em;
 }
 
 .icon__image {
@@ -79,22 +79,112 @@ body {
     border-radius: 20px;
     border: none;
     color: hsl(257, 40%, 49%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content__button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
 }
 .socials__container {
     display: table-cell;
     text-align: center;
     bottom: 0;
+    padding-bottom: 1em;
 }
 
 .socials__icon {
     width: 30px;
     height: 30px;
     display: inline-block;
-    fill: white;
+    margin-left: .2rem;
+    margin-right: .2rem;
 }
 
+.socials__icon:hover {
+    cursor: pointer;
+}
+.socials__icon:nth-child(1):hover {
+    content: url(./images/facebook-svgrepo-com-pink.svg);
+}
 
+.socials__icon:nth-child(2):hover {
+    content: url(./images/twitter-svgrepo-com-pink.svg);
+}
 
+.socials__icon:nth-child(3):hover {
+    content: url(./images/instagram-svgrepo-com-pink.svg);
+}
+
+@media only screen and (min-width: 875px) {
+    .socials__container {
+        margin-top: 1em;
+        padding-bottom: 0;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-size: cover;
+    }
+
+    .icon__container {
+        padding-left: 3.2%;
+        padding-top: 3em;
+     }
+
+    .icon__image {
+        height: 60px;
+    }
+
+    .content__section {
+        flex-direction: row;
+    }
+    .content__container__image {
+        width: 60%;
+        padding-left: 3.2%;
+    }
+
+    .content__image {
+        width: 100%;
+    }
+
+    .content__headline {
+        font-size: 2.5em;
+        width: auto;
+    }
+
+    .content__container__text {
+        width: 40%;
+        margin-top: 0;
+        text-align: left;
+        align-items: normal;
+        display: block;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-bottom: 7em;
+    }
+
+    .content__paragraph {
+        width: auto;
+    }
+    .socials__container {
+        text-align: end;
+        padding-right: 3.2%;
+        margin-top: 0;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+    }
+    .socials__icon {
+        width: 35px;
+        height: 35px;
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+}
 
 
 
