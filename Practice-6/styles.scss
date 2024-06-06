@@ -1,0 +1,41 @@
+@use 'vars';
+
+@mixin standard__button($bkg-color: $primary-black) {
+    background-color: $bkg-color;
+    color: $primary-white;
+    border: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-white;
+}
+header {
+    top: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+}
+
+nav {
+    
+}
