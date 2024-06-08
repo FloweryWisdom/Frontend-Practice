@@ -33,9 +33,22 @@ footer {
 
 header {
     height: 80px;
-    width: 100%;
+    width: 100vw;
+}
+z
+nav {
+    width: 100vw;
+    height: 30px;
 }
 
-nav {
-    
+header nav img:nth-child(1) {
+    width: 88px;
+    height: 44px;
 }
+
+header nav img:nth-child(2) {
+    width: 47px;
+    height: 37px;
+}
+
+
