@@ -113,6 +113,7 @@ header {
   width: 90vw;
   height: auto;
   padding-top: 3em;
+  margin: auto;
 }
 
 .section1__image--media {
@@ -125,4 +126,65 @@ header {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   letter-spacing: 3px;
+}
+
+.section2 {
+  background-image: url(./images/card-background.svg);
+  border: 0.5px solid #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 420px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: width height;
+}
+
+.card__header--text {
+  margin-bottom: 20px;
+}
+
+.card__header--image--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.card__header--image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header--image1 {
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+.header--image2 {
+  bottom: 20px;
+  right: 0px;
+  z-index: 1;
+}
+
+.header--image3 {
+  bottom: 20px;
+  right: 0px;
+  z-index: 0;
+}
+
+.header--image4 {
+  width: 100%;
+  height: auto;
+  bottom: 96px;
+  right: 0px;
+  z-index: 3;
 }/*# sourceMappingURL=styles.css.map */
