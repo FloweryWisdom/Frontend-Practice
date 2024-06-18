@@ -113,6 +113,7 @@ header {
   width: 90vw;
   height: auto;
   padding-top: 3em;
+  margin: auto;
 }
 
 .section1__image--media {
@@ -125,4 +126,149 @@ header {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   letter-spacing: 3px;
+}
+
+.section2 {
+  border: 0.1px solid #000000;
+  max-width: 420px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card__header--container {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(./images/card-background.svg);
+  background-size: cover;
+  max-width: 420px;
+  height: auto;
+}
+
+.card__header--text--container {
+  display: flex;
+  height: 53px;
+  margin-top: 10px;
+}
+
+.card__header--text {
+  line-height: 32px;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  height: 64px;
+  max-width: 420px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.card__header--image--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 73%;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card__header--image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header--image1 {
+  top: 10px;
+  right: 7px;
+  z-index: 2;
+}
+
+.header--image2 {
+  bottom: -24px;
+  right: -1px;
+  z-index: 1;
+}
+
+.header--image3 {
+  bottom: 0px;
+  right: -1px;
+  z-index: 0;
+}
+
+.header--image4 {
+  width: 90%;
+  height: 100%;
+  bottom: 51px;
+  right: -1px;
+  z-index: 2;
+}
+
+.card__body--container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+}
+
+.card__product--name {
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 24px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.card__product--price {
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 24px;
+  margin-bottom: 1em;
+  margin-top: 0.6em;
+}
+
+.card__product--description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  width: 70%;
+}
+
+.card__product--button {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  width: 129px;
+  height: 31px;
+  border: 1px solid #000000;
+  font-size: 14px;
+}
+
+.card__product--ranking {
+  display: flex;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.product--ranking-text {
+  margin-right: 1em;
+}
+
+.product--ranking-icons {
+  list-style-type: none;
+}
+
+.ranking-icons-stars {
+  display: inline-block;
 }/*# sourceMappingURL=styles.css.map */
