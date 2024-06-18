@@ -95,7 +95,7 @@ header {
   border: none;
   border-radius: 8px;
   width: 129px;
-  height: 31px;
+  height: 32px;
   border: 1px solid #000000;
   font-size: 14px;
 }
@@ -249,7 +249,7 @@ header {
   border: none;
   border-radius: 8px;
   width: 129px;
-  height: 31px;
+  height: 32px;
   border: 1px solid #000000;
   font-size: 14px;
 }
@@ -271,4 +271,72 @@ header {
 
 .ranking-icons-stars {
   display: inline-block;
+}
+
+.section4 {
+  height: 870px;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.45)), url(./images/\(mobile\)darius-soodmand-F8E2tks5N04-unsplash\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section4__header {
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section4__paragraph--container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.section4__paragraph--text {
+  letter-spacing: 1px;
+  width: 90%;
+  line-height: 20px;
+}
+
+.section4__form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4__form--label {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  width: 90%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.section4__form--input {
+  width: 90%;
+  height: 36px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+}
+
+.section4__form--input:nth-child(8) {
+  height: 150px;
+}
+
+.section4__form--submit {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  width: 129px;
+  height: 32px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  margin-top: 1.5rem;
+  width: 90%;
 }/*# sourceMappingURL=styles.css.map */
