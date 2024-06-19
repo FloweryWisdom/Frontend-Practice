@@ -271,4 +271,26 @@ header {
 
 .ranking-icons-stars {
   display: inline-block;
+}
+
+.section5 {
+  background: linear-gradient(to bottom, rgb(111, 111, 111), rgba(255, 255, 255, 0.43));
+}
+
+.section5__header {
+  line-height: 32px;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 26px;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section5__icons {
+  margin-top: 2rem;
+}
+
+.section5__icons:nth-child(4) {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=styles.css.map */
