@@ -317,6 +317,11 @@ header {
   margin-top: 30px;
 }
 
+.section3__card--container:nth-child(4) {
+  margin-bottom: 2rem;
+  height: auto;
+}
+
 .section3__card--product--name {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -372,7 +377,7 @@ header {
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 24px;
-  margin-top: 3rem;
+  padding-top: 2rem;
   margin-bottom: 3rem;
 }
 
