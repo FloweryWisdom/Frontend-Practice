@@ -13,14 +13,6 @@
     font-size: 14px;
 }
 
-@mixin section__header() {
-    line-height: 32px;
-    font-family: $primary-font;
-    letter-spacing: 2px;
-    font-weight: 400;
-    font-size: 26px;
-}
-
 @mixin input__field() {
     width: 90%;
     height: 36px;
@@ -38,6 +30,13 @@
     height: 36px;
 }
 
+@mixin section__header() {
+    line-height: 32px;
+    font-family: $primary-font;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 26px;
+}
 
 * {
     margin: 0;
@@ -72,7 +71,7 @@ header {
     width: 100vw;
     padding-top: 2em;
 }
-
+// N A V I G A T I O N  S T Y L E S
 .navigation {
     width: 100vw;
     height: 44px;
@@ -116,6 +115,8 @@ header {
     right: 5px;
     z-index: 1;
 }
+
+// S T A R T  O F  S E C T I O N  1: 
 
 .company__tagline {
     color: rgb(175, 175, 175);
@@ -164,7 +165,7 @@ header {
 
 
 .section2 {
-    border: .1px solid $primary-black;
+    border: 1px solid $primary-black;
     max-width: 420px;
     height: auto;
     display: flex;
@@ -172,10 +173,11 @@ header {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card__header--container {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .07), rgba(255, 255, 255, .2), rgba(0, 0, 0, .2), rgba(0, 0, 0, .3)), url(./images/card-background.svg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.75)), url(./images/section2-card-header-background.svg);
     background-size: cover;
     // background-repeat: no-repeat;
     max-width: 420px;
@@ -301,6 +303,23 @@ header {
     display: inline-block;
 }
 
+.card__product--make--info {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    width: 60%;
+
+}
+
+.card__product--make--bullet{
+    font-size: 16px;
+}
+.product--make--characteristic {
+    display: inline-block;
+}
+
 // E N D  O F  S E C T I O N 2
 
 // S T A R T  O F  S E C T I O N 3:
@@ -423,22 +442,6 @@ header {
     @include standard__button();
     margin-top: 1.5rem;
     width: 90%;
-}
-.card__product--make--info {
-    color: white;
-    font-size: 12px;
-    font-weight: 700;
-    margin-top: 30px; 
-    margin-bottom: 30px;
-    width: 60%;
-
-}
-
-.card__product--make--bullet{
-    font-size: 16px;
-}
-.product--make--characteristic {
-    display: inline-block;
 }
 // E N D  O F  S E C T I O N 4
 
