@@ -13,6 +13,14 @@
     font-size: 14px;
 }
 
+@mixin section__header() {
+    line-height: 32px;
+    font-family: $primary-font;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 26px;
+}
+
 @mixin input__field() {
     width: 90%;
     height: 36px;
@@ -292,6 +300,7 @@ header {
 .ranking-icons-stars {
     display: inline-block;
 }
+
 // E N D  O F  S E C T I O N 2
 
 // S T A R T  O F  S E C T I O N 3:
@@ -432,3 +441,22 @@ header {
     display: inline-block;
 }
 // E N D  O F  S E C T I O N 4
+
+// S T A R T  O F  S E C T I O N 5:
+
+.section5 {
+    background: linear-gradient(to bottom, rgba(111, 111, 111, 1), rgba(255, 255, 255, .43)),
+}
+.section5__header {
+    @include section__header();
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section5__icons {
+    margin-top: 2rem;
+}
+
+.section5__icons:nth-child(4) {
+    margin-bottom: 3rem;
+}
