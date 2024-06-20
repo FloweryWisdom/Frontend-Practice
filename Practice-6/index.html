@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -18,7 +19,7 @@
         </nav>
     </header>
 
-    <main>
+    <section>
         <section class="section1">
             <p class="company__tagline">El arte de tocar piano</p>
             <h1 class="company__name">Instituto Pazioli</h1>
@@ -60,18 +61,79 @@
                 </div>
                 <h4 class="card__product--price">Desde: $110,000.00</h4>
                 <p class="card__product--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit repellat, quo deleniti cum magni perferendis vitae, exercitationem temporibus sunt, velit reprehenderit quidem cumque corrupti debitis harum? Aspernatur, itaque voluptatum!</p>
-                <div class="card__product--make--info"></div>
+                <ul class="card__product--make--info">
+                    <li class="card__prodcut--make--text product--make--characteristic">Nuveo</li>
+                    <li class="card__product--make--bullet product--make--characteristic">&nbsp;•&nbsp;</li>
+                    <li class="card__product--make--text product--make--characteristic">2021</li>
+                    <li class="card__product--make--bullet product--make--characteristic">&nbsp;•&nbsp;</li>
+                    <li class="card__product--make--text product--make--characteristic">Acús...</li>
+                    <li class="card__product--make--bullet product--make--characteristic">&nbsp;•&nbsp;</li>
+                    <li class="card__product--make--text product--make--characteristic">M. Cedro</li>
+                </ul>
                 <button class="card__product--button">Agregar al carrito</button>
             </div>
-        
+        </section>
+        <section class="section3">
+            <h2 class="section3__header">¿Qué tipod de piano estás buscando?</h2>
+            <div class="section3__card--container">
+                <img src="./images/card-piano-white.png" alt="">
+                <img src="./images/card-piano-vector.svg" alt="">
+                <h3 class="section3__card--product--name">The Butterfly</h3>
+                <ul class="section3__card__product--info--container">
+                    <li class="section3__card--product-info">Nuevo</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">2021</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">Acús...</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">M. Cedro</li>
+                </ul>
+                <div class="section3__card--product--price--container">
+                    <button class="section3__card--product--price">Desde: <b>$ 195k mn</b></button>
+                    <img class="section3__card--product--icon" src="./images/card-product-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="section3__card--container">
+                <img src="./images/card-piano-yellow.png" alt="">
+                <img src="./images/card-piano-vector.svg" alt="">
+                <h3 class="section3__card--product--name">Golden Leaf</h3>
+                <ul class="section3__card__product--info--container">
+                    <li class="section3__card--product-info">Nuevo</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">2021</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">Acús...</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">M. Cedro</li>
+                </ul>
+                <div class="section3__card--product--price--container">
+                    <button class="section3__card--product--price">Desde: <b>$ 305k mn</b></button>
+                    <img class="section3__card--product--icon" src="./images/card-product-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="section3__card--container">
+                <img src="./images/card-piano-brown.png" alt="">
+                <img src="./images/card-piano-vector.svg" alt="">
+                <h3 class="section3__card--product--name">Walnut Strauss</h3>
+                <ul class="section3__card__product--info--container">
+                    <li class="section3__card--product-info">Nuevo</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">2021</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">Acús...</li>
+                    <li class="section3__card--product-info section3__card--bullet">•</li>
+                    <li class="section3__card--product-info">M. Cedro</li>
+                </ul>
+                <div class="section3__card--product--price--container">
+                    <button class="section3__card--product--price">Desde: <b>$ 125k mn</b></button>
+                    <img class="section3__card--product--icon" src="./images/card-product-icon.svg" alt="">
+                </div>
+            </div>
         </section>
 
 
-        <section class="section3"></section>
-
-
-
         <section class="section4">
+          <section class="section4">
             <h2 class="section4__header">Cóntactanos</h2>
             <div class="section4__paragraph--container">
                 <p class="section4__paragraph--text">¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones complejas. Contactános para conocer tus objetivos.</p>    
@@ -88,6 +150,14 @@
                 <input id="tellUsMore" class="section4__form--input" type="text">
                 <input class="section4__form--submit" type="submit">
             </form>
+        </section>
+
+
+        <section class="section5">
+            <h2 class="section5__header">Conoce a nuestros partners</h2>
+            <img src="./icons/section5-icon-1-mobile.png" alt="" class="section5__icons">
+            <img src="./icons/section5-icon-2-mobile.png" alt="" class="section5__icons">
+            <img src="./icons/section5-icon-3-mobile.png" alt="" class="section5__icons">
         </section>
     </main>
 
