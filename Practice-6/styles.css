@@ -456,6 +456,7 @@ header {
 }
 
 .footer--container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -484,7 +485,7 @@ header {
 
 .footer__navigation--bold:nth-child(8) {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* :NTH-CHILD() I S  B A S E D  O N  T H E  N U M B E R  O F  C H I L D R E N  I N  T H E  P A R E N T  C O N T A I N E R */
@@ -492,27 +493,44 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
-.footer__country {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+.footer__address--container {
   font-size: 14px;
   line-height: 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-bottom: 4rem;
 }
 
 .footer__address {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
   font-size: 12px;
-  line-height: 19px;
-  width: 70%;
+  line-height: 18px;
 }
 
-.footer__copyright--name {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
+.footer__address--container {
+  font-size: 14px;
   font-weight: 300;
+  line-height: 16px;
+}
+
+.footer__copyright--text1 {
+  font-size: 14px;
+}
+
+.footer__copyright--container {
+  margin-bottom: 2rem;
+}
+
+.footer__credits--container {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer__credits2 {
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
