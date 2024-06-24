@@ -38,6 +38,20 @@
     font-size: 26px;
 }
 
+@mixin poppins__text() {
+    font-family: "Poppins", sans-serif; 
+    font-weight: 300;
+    font-size: 12px; 
+    line-height: 18px;
+}
+@mixin footer__copyright__text() {
+    font-size: 14px;
+    font-weight: 300; 
+    line-height: 16px;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -347,6 +361,12 @@ header {
     margin-top: 30px;
 }
 
+.section3__card--container:nth-child(4) {
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+
 .section3__card--product--name {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -400,7 +420,7 @@ header {
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 24px;
-    margin-top: 3rem;
+    padding-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -462,4 +482,85 @@ header {
 
 .section5__icons:nth-child(4) {
     margin-bottom: 3rem;
+}
+
+// E N D  S E C T I O N  5
+
+// S T A R T  O F  F O O T E R: 
+
+.footer--container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.43), rgba(111, 111, 111, 1)),
+}
+
+.footer__icon--container {
+    margin-top: 3rem;
+}
+
+.footer__socials--container {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+.footer__navigation--bold {
+    font-family: $primary-font;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.footer__navigation--bold:nth-child(3) {
+    margin-bottom: .5rem;
+}
+
+.footer__navigation--bold:nth-child(8) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* :NTH-CHILD() I S  B A S E D  O N  T H E  N U M B E R  O F  C H I L D R E N  I N  T H E  P A R E N T  C O N T A I N E R */
+
+.footer__navigation--options {
+    @include poppins__text();
+}
+
+
+.footer__address--container {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 300;
+    margin-bottom: 4rem,
+}
+
+.footer__address {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__address--container {
+    @include footer__copyright__text();
+}
+
+.footer__copyright--text1 {
+    font-size: 14px; 
+}
+
+.footer__copyright--container {
+    margin-bottom: 2rem;
+}
+
+.footer__credits--container {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $text-font;
+}
+
+
+.footer__credits2 {
+    font-weight: 700;
+       
 }
