@@ -79,6 +79,10 @@ header {
   z-index: 1;
 }
 
+.navigation__menu {
+  display: none;
+}
+
 .company__tagline {
   color: rgb(175, 175, 175);
   margin-top: 5em;
@@ -126,6 +130,10 @@ header {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   letter-spacing: 3px;
+}
+
+.section1__socials--container {
+  display: none;
 }
 
 .section2 {
@@ -536,4 +544,102 @@ header {
 
 .footer__credits2 {
   font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .section2 {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .section5__icons:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navigation {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .navigation__menu {
+    display: flex;
+    width: 397px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2em;
+  }
+  .navigation__menu--button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    width: 129px;
+    height: 32px;
+    border: 1px solid #000000;
+    font-size: 14px;
+  }
+  .navigation__menu--options {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.44px;
+    letter-spacing: 1px;
+  }
+  .section1 {
+    width: 100vw;
+  }
+  .section1__image--container:not(:nth-child(2)) {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .section1__image--media {
+    width: 60%;
+    margin-left: auto;
+  }
+  .section1__socials--container {
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+    height: 144px;
+    justify-content: space-between;
+    justify-self: end;
+    margin-left: auto;
+    margin-right: 2em;
+    align-self: flex-end;
+    margin-bottom: 6em;
+  }
+  /*  .section2 {
+       max-width: 100vw;
+       height: 761px;
+   }
+
+   .card__header--container {
+       height: 100%;
+   }
+
+   .card__header--text--container {
+       display: none;
+   }
+
+   .card__header--image--container {
+       position: absolute;
+       width: 58ex;
+       height: 463px;
+       right: 230px;
+       bottom: -655px;
+   }
+
+   .card__body--container {
+       width: 360px;
+       height: 450px;
+       position: absolute;
+       background: none;
+       left: 10px;
+       bottom: -650px;
+   } */
+  .section3__cards--container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=styles.css.map */

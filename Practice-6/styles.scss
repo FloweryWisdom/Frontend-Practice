@@ -130,6 +130,10 @@ header {
     z-index: 1;
 }
 
+.navigation__menu {
+    display: none;
+}
+
 // S T A R T  O F  S E C T I O N  1: 
 
 .company__tagline {
@@ -173,6 +177,10 @@ header {
     font-family: $primary-font;
     font-weight: 400;
     letter-spacing: 3px;
+}
+
+.section1__socials--container {
+    display: none;
 }
 
 // S T A R T  O F  S E C T I O N 2: 
@@ -567,3 +575,118 @@ header {
     font-weight: 700;
        
 }
+
+
+// E N D  O F  F O O T E R
+
+// S T A R T  O F  M E D I A  Q U E R I E S : 
+
+@media only screen and (min-width: 768px) {
+    .section2 {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .section5__icons:nth-child(4) {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    //  H E A D E R  S T Y L E S
+
+    .navigation {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .navigation__menu {
+        display: flex;
+        width: 397px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 2em;
+    }
+
+    .navigation__menu--button {
+        @include standard__button;
+    }
+
+    .navigation__menu--options {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.44px;
+        letter-spacing: 1px;
+    }
+
+    // S E C T I O N  1  S T Y L E S
+
+    .section1 {
+        width: 100vw;
+    }
+
+    .section1__image--container:not(:nth-child(2)) {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1__image--media {
+        width: 60%;
+        margin-left: auto;
+    }
+
+    .section1__socials--container {
+        display: flex;
+        flex-direction: column;
+        width: 32px;
+        height: 144px;
+        justify-content: space-between;
+        justify-self: end;
+        margin-left: auto;
+        margin-right: 2em;
+        align-self: flex-end;
+        margin-bottom: 6em;
+    }
+
+    // S E C T I O N  2  S T Y L E S
+   /*  .section2 {
+        max-width: 100vw;
+        height: 761px;
+    }
+
+    .card__header--container {
+        height: 100%;
+    }
+
+    .card__header--text--container {
+        display: none;
+    }
+
+    .card__header--image--container {
+        position: absolute;
+        width: 58ex;
+        height: 463px;
+        right: 230px;
+        bottom: -655px;
+    }
+
+    .card__body--container {
+        width: 360px;
+        height: 450px;
+        position: absolute;
+        background: none;
+        left: 10px;
+        bottom: -650px;
+    } */
+
+    // S E C T I O N  3  S T Y L E S
+
+    .section3__cards--container {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+
+    }
+} 
