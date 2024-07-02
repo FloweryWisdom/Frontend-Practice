@@ -742,4 +742,27 @@ header {
   .section5 {
     background: linear-gradient(to bottom, #6f6f6f, #ffffff);
   }
+  .section5__icons {
+    display: none;
+  }
+  .oval-icon {
+    width: 328px;
+    height: 103px;
+    border-radius: 1000px;
+    background-color: #000000;
+    display: flex;
+    padding: 0.4rem;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    line-height: 37.57px;
+    align-items: center;
+  }
+  .oval-icon p {
+    margin-left: 3rem;
+  }
+  .oval-icon p::first-letter {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=styles.css.map */
