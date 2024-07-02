@@ -317,7 +317,7 @@ header {
 }
 
 .section3__card--container {
-  height: 350px;
+  /* height: 350px; */
   width: 250px;
   border-radius: 8px;
   box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
@@ -375,6 +375,19 @@ header {
   display: inline-block;
 }
 
+.section3__card--button {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  width: 129px;
+  height: 32px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 .section4 {
   height: 870px;
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.35)), url(./images/\(mobile\)darius-soodmand-F8E2tks5N04-unsplash\ 1.svg);
@@ -427,7 +440,14 @@ header {
   border: 1px solid #FFFFFF;
 }
 
-.section4__form--input:nth-child(8) {
+.section4__form--phone--email--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4__form--input:nth-child(5) {
   height: 150px;
 }
 
@@ -641,5 +661,28 @@ header {
     display: flex;
     width: 100vw;
     justify-content: space-evenly;
+  }
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section4__paragraph--container {
+    width: 561px;
+  }
+  .section4__form--container {
+    width: 500px;
+  }
+  .section4__form--phone--email--container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: no-wrap;
+  }
+  .section4__form--phone--email--container .section4__form--input {
+    width: 45%;
+  }
+  .section4__form--phone--email--container .section4__form--label {
+    width: auto;
   }
 }/*# sourceMappingURL=styles.css.map */

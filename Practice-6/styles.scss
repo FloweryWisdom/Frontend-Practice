@@ -361,7 +361,7 @@ header {
 }
 
 .section3__card--container {
-    height: 350px;
+    /* height: 350px; */
     width: 250px;
     border-radius: 8px;
     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
@@ -415,6 +415,12 @@ header {
     display: inline-block;
 }
 
+.section3__card--button {
+    @include standard__button;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
 
 // S T A R T  O F  S E C T I O N 4: 
 
@@ -462,10 +468,17 @@ header {
     margin-top: 2rem;
 }
 .section4__form--input {
-    @include input__field()
+    @include input__field();
 }
 
-.section4__form--input:nth-child(8) {
+.section4__form--phone--email--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4__form--input:nth-child(5) {
     height: 150px;
 }
 
@@ -689,4 +702,37 @@ header {
         justify-content: space-evenly;
 
     }
+
+    // S E C T I O N  4  S T Y L E S 
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4__paragraph--container {
+        width: 561px;
+    }
+
+    .section4__form--container {
+        width: 500px;
+    }
+
+    .section4__form--phone--email--container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: no-wrap;
+    }
+
+    .section4__form--phone--email--container .section4__form--input {
+        width: 45%;
+    }
+
+    .section4__form--phone--email--container .section4__form--label {
+        width: auto;
+    }
+
+
 } 
