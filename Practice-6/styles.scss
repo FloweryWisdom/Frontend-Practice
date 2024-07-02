@@ -21,6 +21,15 @@
     border: 1px solid $primary-white;
 }
 
+@mixin label__text() {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
 @mixin card__product__price() {
     background-color: $primary-white;
     color: $primary-black;
@@ -459,13 +468,12 @@ header {
     align-items: center;
 }
 
+.section4__form--container .section4__form--phone--email--container {
+    display: none;
+}
+
 .section4__form--label {
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-align: left;
-    width: 90%;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    @include label__text();
 }
 .section4__form--input {
     @include input__field();
@@ -478,7 +486,14 @@ header {
     align-items: center;
 }
 
-.section4__form--input:nth-child(5) {
+.section4__form--phone--email--container--mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4__form--input:nth-child(6) {
     height: 150px;
 }
 
@@ -487,6 +502,8 @@ header {
     margin-top: 1.5rem;
     width: 90%;
 }
+
+
 // E N D  O F  S E C T I O N 4
 
 // S T A R T  O F  S E C T I O N 5:
@@ -592,6 +609,13 @@ header {
 
 // E N D  O F  F O O T E R
 
+
+
+
+
+
+
+
 // S T A R T  O F  M E D I A  Q U E R I E S : 
 
 @media only screen and (min-width: 768px) {
@@ -696,10 +720,25 @@ header {
 
     // S E C T I O N  3  S T Y L E S
 
+    .section3 {
+        margin-top: 5rem; 
+    }
+
+    .section3__header {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
     .section3__cards--container {
         display: flex;
-        width: 100vw;
+        width: 960px;
         justify-content: space-evenly;
+
+    }
+
+    .section3__card--button {
+        margin-top: 5rem;
+        margin-bottom: 0;
 
     }
 
@@ -709,6 +748,15 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, .35)), url(./images/section4--bacground--desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        //background-position: center;
+        height: auto;
+    }
+
+    .section4__header {
+        padding-top: 7rem;
     }
 
     .section4__paragraph--container {
@@ -717,22 +765,62 @@ header {
 
     .section4__form--container {
         width: 500px;
+        margin-bottom: 5rem;
     }
 
-    .section4__form--phone--email--container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-wrap: no-wrap;
+    .section4__form--container .section4__form--phone--email--container {
+        display: flex;;
     }
 
-    .section4__form--phone--email--container .section4__form--input {
-        width: 45%;
+    .section4__form--phone--email--container--mobile {
+        display: none;
+    }
+
+     .section4__form--phone--email--container {
+        margin-top: 2rem;
     }
 
     .section4__form--phone--email--container .section4__form--label {
         width: auto;
     }
 
+    .section4__form--phone--email--container tbody {
+        width: 90%;
+    } 
 
-} 
+    .section4__form--phone--email--container tbody th, .section4__form--phone--email--container tbody td {
+        width: 50%;
+    }
+
+    .section4__form--phone--email--container tbody th {
+        text-align: left;
+    } 
+
+
+    .section4__form--phone--email--container tbody tr {
+        display: flex;
+        width: 100%;
+    }
+
+    .section4__form--phone--email--container tbody th:nth-child(2) {
+        margin-left: 5%;
+    }
+
+    .section4__form--phone--email--container tbody td:nth-child(1) input {
+        margin-right: 5%;
+        width: 95%;
+    }
+
+    .section4__form--phone--email--container tbody td:nth-child(2) input {
+        margin-left: 5%;
+        width: 95%;
+    }
+
+
+    // S E C T I O N  5  S T Y L E S :
+
+    .section5 {
+        background: linear-gradient(to bottom, #6f6f6f, #ffffff),
+    }
+}   
+

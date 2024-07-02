@@ -159,12 +159,25 @@
             <form action="" class="section4__form--container">
                 <label for="name" class="section4__form--label">Nombre</label>
                 <input id="name" class="section4__form--input" type="text">
-                <div class="section4__form--phone--email--container">
+                <div class="section4__form--phone--email--container--mobile">
                     <label for="phone" class="section4__form--label">Telefono</label>
-                    <input id="phone" class="section4__form--input" type="text">
+                    <input  id="phone" class="section4__form--input" type="text">
                     <label for="email" class="section4__form--label">Email</label>
-                    <input id="email" class="section4__form--input" type="text">
+                    <input id="email" class="section4__form--input" type="text"> 
                 </div>
+
+                
+                <table class="section4__form--phone--email--container">
+                    
+                    <tr>
+                        <th><label  for="phone" class="section4__form--label">Telefono</label></th>
+                        <th><label for="email" class="section4__form--label">Email</label></th>
+                    </tr>
+                    <tr>
+                        <td><input id="phone" class="section4__form--input" type="text"></td>
+                        <td><input id="email" class="section4__form--input" type="text"></td>
+                    </tr>
+                </table>
                 <label for="tellUsMore" class="section4__form--label">Cuéntanos más</label>
                 <input id="tellUsMore" class="section4__form--input" type="text">
                 <input class="section4__form--submit" type="submit">
