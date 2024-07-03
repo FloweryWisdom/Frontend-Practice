@@ -497,6 +497,10 @@ header {
   margin-bottom: 3rem;
 }
 
+.section5__icons--container {
+  display: none;
+}
+
 .footer--container {
   width: 100vw;
   display: flex;
@@ -742,6 +746,32 @@ header {
   .section5 {
     background: linear-gradient(to bottom, #6f6f6f, #ffffff);
   }
+  .section5__header {
+    padding-top: 4rem;
+  }
+  .section5__icons--container {
+    margin: 0 auto;
+    height: 420px;
+    max-width: 1114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    margin-top: 6rem;
+    justify-content: space-between;
+  }
+  .section5__icons--row-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .section5__icons--row-container:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   .section5__icons {
     display: none;
   }
@@ -764,5 +794,37 @@ header {
   }
   .oval-icon p::first-letter {
     font-size: 32px;
+  }
+  .oval-icon {
+    display: none;
+  }
+  .footer__container--desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer__container--content--container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: center;
+    background-color: lightblue;
+    align-items: center;
+  }
+  .footer__content--logo--socials--container {
+    width: 300px;
+    height: 450px;
+    background-color: green;
+  }
+  .footer__content--company--info--container {
+    width: 800px;
+    height: 450px;
+    background-color: yellow;
+  }
+  .footer__icon--container--desktop {
+    height: 200px;
+    width: 200px;
+    background-color: red;
   }
 }/*# sourceMappingURL=styles.css.map */
