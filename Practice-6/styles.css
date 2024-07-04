@@ -581,6 +581,10 @@ header {
   font-weight: 700;
 }
 
+.footer__container--desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .section2 {
     border-radius: 20px;
@@ -798,33 +802,80 @@ header {
   .oval-icon {
     display: none;
   }
+  .footer--container {
+    display: none;
+  }
   .footer__container--desktop {
     display: flex;
+    padding-top: 2rem;
     flex-direction: column;
     justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.43), rgb(111, 111, 111));
   }
   .footer__container--content--container {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 450px;
     justify-content: center;
-    background-color: lightblue;
     align-items: center;
   }
   .footer__content--logo--socials--container {
-    width: 300px;
-    height: 450px;
-    background-color: green;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .footer__content--company--info--container {
-    width: 800px;
-    height: 450px;
-    background-color: yellow;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .footer__icon--container--desktop {
-    height: 200px;
-    width: 200px;
-    background-color: red;
+    height: 140px;
+    width: 133px;
+    margin-bottom: 1rem;
+  }
+  .footer__socials--container--desktop {
+    height: 32px;
+    width: 133px;
+  }
+  .footer__content--company--text-info--container {
+    width: 500px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__content--company--about-us--container {
+    width: 160px;
+    height: 140px;
+    text-align: left;
+  }
+  .footer__content--company--about-us--container p {
+    margin-bottom: 0.3rem;
+  }
+  .footer__navigation--spacer {
+    width: auto;
+    height: 1rem;
+  }
+  .footer__content--company--contact-us--container {
+    width: 250px;
+    height: 140px;
+    text-align: left;
+  }
+  .footer__content--company--copyright--container {
+    height: 32px;
+    width: 500px;
+    margin-top: 1rem;
+    line-height: 32px;
+    text-align: left;
+  }
+  .footer__credits--container {
+    margin-bottom: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
