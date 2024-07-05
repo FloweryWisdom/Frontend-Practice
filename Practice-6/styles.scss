@@ -704,6 +704,11 @@ header {
         width: 100vw;
     }
 
+    .section1 .company__name {
+        font-size: 56px;
+        font-weight: 400;
+    }
+
     .section1__image--container:not(:nth-child(2)) {
         width: 100vw;
         display: flex;
@@ -728,6 +733,7 @@ header {
         margin-bottom: 6em;
     }
 
+    
     // S E C T I O N  2  S T Y L E S
    /*  .section2 {
         max-width: 100vw;
@@ -1065,15 +1071,5 @@ header {
     .footer__credits--container {
         margin-bottom: 2rem;
     }
-
-
-
-    /* .section3__card--container img:nth-child(1) {
-        position: absolute;
-        bottom: 170px;
-        z-index: 2;
-        left: 20px;
-    } */
-
 }   
 

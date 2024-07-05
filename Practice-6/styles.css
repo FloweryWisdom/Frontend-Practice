@@ -639,6 +639,10 @@ header {
   .section1 {
     width: 100vw;
   }
+  .section1 .company__name {
+    font-size: 56px;
+    font-weight: 400;
+  }
   .section1__image--container:not(:nth-child(2)) {
     width: 100vw;
     display: flex;
@@ -928,10 +932,4 @@ header {
   .footer__credits--container {
     margin-bottom: 2rem;
   }
-  /* .section3__card--container img:nth-child(1) {
-      position: absolute;
-      bottom: 170px;
-      z-index: 2;
-      left: 20px;
-  } */
 }/*# sourceMappingURL=styles.css.map */
