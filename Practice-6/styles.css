@@ -302,6 +302,10 @@ header {
   display: inline-block;
 }
 
+.section2__container--desktop {
+  display: none;
+}
+
 .section3 {
   display: flex;
   flex-direction: column;
@@ -667,31 +671,44 @@ header {
   .section2 {
     max-width: 100vw;
     height: 761px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
   }
   .card__header--container, .card__body--container {
     display: none;
   }
   .section2__container--desktop {
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.75)), url(./images/section2-card-header-background.svg);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.72), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.36), rgb(255, 255, 255)), url(./images/section2-card-header-background.svg);
     background-size: cover;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .card__header--text {
     text-align: center;
     color: #333;
+    line-height: 43px;
+    font-size: 32px;
+    margin-top: 10px;
   }
   .section2__container--desktop .product {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
   }
   .section2__container--desktop .product-info {
     flex: 1;
+    text-align: left;
+    max-width: 360px;
   }
   .section2__product--desktop .product-image {
     flex: 1;
