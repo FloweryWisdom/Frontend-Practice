@@ -129,6 +129,12 @@ header {
     width: 50px;
 }
 
+.shopping__cart--container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 .navigation__logo {
     width: 88px;
     height: 44px;
@@ -158,6 +164,16 @@ header {
     display: none;
 }
 
+.navigation__menu--options:hover {
+    //color: #0066CC;
+    opacity: 0.8;
+    cursor: pointer;
+    //transition: all 0.1s ease;
+    font-weight: bold;
+    transform: scale(1.05);
+
+}
+
 // S T A R T  O F  S E C T I O N  1: 
 
 .company__tagline {
@@ -178,9 +194,19 @@ header {
     margin-right: 1.5em;
 }
 
+.section1__button--black:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
 .section1__button--white {
     background-color: $primary-white;
     color: $primary-black;
+}
+
+.section1__button--white:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $primary-white;
+    cursor: pointer;
 }
 
 .section1__image--container {
@@ -333,6 +359,11 @@ header {
     width: 230px; 
 }
 
+.section2 .card__product--button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
 .card__product--ranking  {
     display: flex;
     color: white; 
@@ -399,6 +430,12 @@ header {
     margin-top: 30px;
 }
 
+.section3__card--container:hover {
+    //cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
 .section3__card--container:nth-child(4) {
     margin-bottom: 2rem;
     height: auto;
@@ -443,12 +480,22 @@ header {
     display: inline-block;
 }
 
+.section3__card--product--icon:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 .section3__card--button {
     @include standard__button;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
+.section3__card--button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
 
 // S T A R T  O F  S E C T I O N 4: 
 
@@ -522,6 +569,11 @@ header {
     width: 90%;
 }
 
+.section4__form--submit:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
 
 // E N D  O F  S E C T I O N 4
 
@@ -568,6 +620,11 @@ header {
     margin-top: 2.5rem;
     margin-bottom: 2rem;
 }
+
+.footer__socials--icons:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .footer__navigation--bold {
     font-family: $primary-font;
     font-size: 14px;
@@ -587,6 +644,13 @@ header {
 
 .footer__navigation--options {
     @include poppins__text();
+}
+
+.footer__navigation--options:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
 
@@ -695,6 +759,11 @@ header {
         @include standard__button;
     }
 
+    .navigation__menu--button:hover {
+        background-color: rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+    }
+
     .navigation__menu--options {
         font-weight: 600;
         font-size: 14px;
@@ -736,7 +805,11 @@ header {
         align-self: flex-end;
         margin-bottom: 6em;
     }
-
+    
+    .section1__socials--icons:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
     
     // S E C T I O N  2  S T Y L E S
 
@@ -990,13 +1063,13 @@ header {
     .section5__icons--container {
         margin: 0 auto;
         height: 420px;
-        max-width: 1114px;
+        width: 900px;
         display: flex;
         flex-direction: column; 
         align-items: center;
-        overflow-x: auto;
         margin-top: 6rem;
         justify-content: space-between;
+        overflow: hidden;
 
     }
 
@@ -1010,8 +1083,30 @@ header {
     .section5__icons--row-container:nth-child(2) {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 1050px;
         margin-bottom: 20px;
+    }
+
+    @keyframes moveLeft {
+        0% {transform: translateX(100%);} 
+        100% {transform: translateX(-100%); }
+    }
+
+    @keyframes moveRight {
+        0% {transform: translateX(-100%);}
+        100% {transform: translateX(100%);}
+    }
+
+    .section5 .row-top {
+        animation: moveLeft 20s linear infinite;
+    }
+
+    .section5 .row-middle {
+        animation: moveRight 20s linear infinite;
+    }
+
+    .section5 .row-bottom {
+        animation: moveLeft 20s linear infinite;
     }
 
     .section5__icons {
@@ -1093,6 +1188,8 @@ header {
         //background-color: blue;
 
     }
+
+
 
     .footer__content--company--text-info--container {
         width: 500px;
